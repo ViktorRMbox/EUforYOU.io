@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+.bgvideo {
+    height: 40vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+.bgvideo video{
+    /* делаем вертикаль 50 */
+    height: 40vh;
+    /* делаем ширину 100*/
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* поля которые невмещаються будут обрезаны */
+    object-fit: cover;
+    /* делаем первосепенность слоя */
+    z-index: 1;
+}
+
+/* <!-- делаем затемнение --> */
+.effect {
+        /* делаем вертикаль 50 */
+        height: 45vh;
+        /* делаем ширину 100*/
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* поля которые невмещаються будут обрезаны */
+        object-fit: cover;
+        /* делаем первосепенность слоя */
+        z-index: 2;
+        /* добавляем черного цвета в картинку */
+        /* background-color: rgba(0, 0, 0, 0.055); */
+}
+
+.video-text {
+    font-style: oblique;
+    font-style: italic;
+    
+    color: rgba(255, 0, 174, 0.505);
+        /* делаем второй слой */
+    z-index: 2;
+}

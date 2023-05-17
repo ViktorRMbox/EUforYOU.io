@@ -1,0 +1,95 @@
+/* подгружаем шрифты с google fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* добавляем в body основной шрифт Pacifico и альтернативный serif */
+body {
+	font-family: Roboto, serif;
+    /* background: #fff url(../images/Evening_Forests_Mountains_Firewatch_Campo_Santo_549147_2560x1440.jpg) left center/contain repeat content-box fixed; */
+    background: linear-gradient(136deg, rgba(255, 0, 160, 0.05) 0%, #fff 100%);    /* background: radial-gradient( #7300FF 0%, #000000 100%); */
+        color: rgb(0, 0, 0);
+}
+.navbar-nav .nav-link.active {
+    color: rgb(89, 89, 89);
+}
+
+.navbar-brand img{
+    width: 40px;
+}
+
+.navbar-toggler {
+    background-color: rgb(135, 135, 135);
+}
+
+.sidebar {
+    color: rgb(0, 0, 0);
+	font-style: italic;
+    background: linear-gradient(136deg, rgba(255, 0, 160, 0.05) 0%, #fff 100%);    /* background: radial-gradient( #7300FF 0%, #000000 100%); */
+
+}
+
+.card {   
+    background: linear-gradient(136deg, rgba(255, 0, 160, 0.05) 0%, #fff 100%);    /* background: radial-gradient( #7300FF 0%, #000000 100%); */
+
+}
+
+.card a {
+    text-decoration: none;
+    color: rgb(0, 0, 0); 
+
+}
+
+.slide-text, .footer-text {
+    color: black;
+margin: auto auto;
+}
+
+/* анимация кнопки звонка */
+.call-anim {
+    animation: call 2s ease 2s infinite normal forwards;
+}
+
+@keyframes call {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
+footer {
+	
+    background: linear-gradient(136deg, rgba(255, 0, 208, 0.054) 0%, #fff 100%);    /* background: radial-gradient( #7300FF 0%, #000000 100%); */
+
+}
+.container-fluid a {
+    text-decoration: none;
+
+}
+.nav-item {
+margin: auto 0px;
+}
